@@ -37,18 +37,18 @@ body {
   position: sticky;
   top: 0;
   align-self: flex-start;
-  width: 320px;
+  width: 270px;
   flex-shrink: 0;
-  padding: 60px 40px;
+  padding: 50px 32px;
   display: flex;
   flex-direction: column;
 }
 
 .avatar {
-  width: 240px;
-  height: 315px;
+  width: 190px;
+  height: 250px;
   flex-shrink: 0;
-  border-radius: 20px;
+  border-radius: 18px;
   background: var(--accent-dim);
   color: var(--accent);
   font-family: var(--mono);
@@ -369,7 +369,7 @@ a {
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .wrapper {
     flex-direction: column;
   }
@@ -379,6 +379,21 @@ a {
     height: auto;
     width: 100%;
     padding: 40px 24px 20px;
+  }
+
+  .avatar {
+    width: 140px;
+    height: 184px;
+  }
+
+  .mz-badge {
+    width: 34px;
+    height: 34px;
+    font-size: 0.75em;
+  }
+
+  .name {
+    font-size: 1.4em;
   }
 
   .nav {
