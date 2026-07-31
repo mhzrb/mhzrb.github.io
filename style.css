@@ -45,8 +45,8 @@ body {
 }
 
 .avatar {
-  width: 175px;
-  height: 184px;
+  width: 190px;
+  height: 250px;
   flex-shrink: 0;
   border-radius: 18px;
   background: var(--accent-dim);
@@ -132,9 +132,19 @@ body {
 }
 
 .socials {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  margin-top: 0;
   display: flex;
-  gap: 18px;
-  margin-top: 40px;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+  background: rgba(10, 14, 13, 0.85);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  backdrop-filter: blur(4px);
+  z-index: 20;
 }
 
 .socials a {
@@ -403,7 +413,9 @@ a {
   }
 
   .socials {
-    margin-top: 24px;
+    right: 16px;
+    bottom: 16px;
+    gap: 12px;
   }
 
   .content {
