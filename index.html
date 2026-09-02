@@ -55,19 +55,19 @@
       <p class="eyebrow"># 01 — about</p>
       <h2>About</h2>
       <p>
-        I'm a Software Engineer with nearly six years of professional experience across software development and technical education, with the past several years focused hands on on building backend systems, APIs, automation tools, and data driven applications.
+        I'm a Backend Software Engineer with nearly six years of experience across software development and technical education, with recent years focused on backend systems, APIs, automation, and data-driven applications.
       </p>
  <p>
-      My core experience is in <strong>Python and Django</strong>, along with REST APIs, SQL databases, Linux, Docker, and cloud environments. I've also worked with React and TypeScript, and I have a broader technical foundation in C/C++ and Java.
+ My core stack is <strong>Python and Django</strong>, with hands-on experience in FastAPI, PostgreSQL, REST APIs, Linux, Docker, and cloud environments. I've also built full-stack applications with React and TypeScript and bring a broader technical foundation in C/C++ and Java.
       </p>
   <p>
-      I'm particularly interested in backend, systems, cloud, and platform engineering. I enjoy solving problems around reliability, automation, performance, integrations, and scalable software design, and I care about building software that is clean, maintainable, and dependable.
+      I'm particularly interested in backend, systems, and platform engineering, especially reliability, concurrency, distributed processing, performance, integrations, and maintainable software design.
       </p>
       <p>
-       I like understanding how systems behave behind the scenes, making thoughtful technical decisions, and continuously improving the way I build software. I'm especially interested in distributed systems, software architecture, and modern infrastructure technologies.
+       I enjoy understanding how systems behave behind the scenes, making deliberate technical trade-offs, and turning operational problems into dependable software. Recent projects include a distributed task queue, a concurrency-safe inventory service, and a multi-household budgeting platform.
       </p>
       <p>
-       I'm currently based in the Netherlands and authorized to work here without a TWV. I'm always happy to connect with developers, engineers, and technology professionals, and I'm open to software engineering opportunities where I can contribute, learn, and work on technically meaningful products.
+       I'm currently based in the Netherlands and authorized to work here without a TWV. I'm open to software engineering opportunities where I can contribute, continue learning, and work on technically meaningful products.
       </p>
       <p>
        Outside of software, I'm an avid reader across many fields, from technical books to fiction and everything in between.
@@ -84,25 +84,23 @@
           <span class="entry-date">Jul 2024 — Present</span>
         </div>
         <p class="entry-sub">Self Employed · Part-time · Remote</p>
-        <p>Delivering backend and full-stack solutions for clients, working across JavaScript,
-           MongoDB, Docker, Azure, and Python/Django stacks.</p>
+        <p>Designing and deploying backend applications, API integrations, and automation tools for small business clients, including a transaction safe e-commerce inventory system and API based reporting workflows. I work end to end from requirements and relational data modeling through implementation, deployment, debugging, and ongoing technical support.
+</p>
         <div class="tags">
-          <span>Python</span><span>Django</span><span>JavaScript</span><span>MongoDB</span><span>Docker</span><span>Azure</span>
+          <span>Python</span><span>Django</span><span>REST APIs</span><span>PostgreSQL</span><span>Docker</span><span>Azure</span>
         </div>
       </div>
 
       <div class="entry">
         <div class="entry-head">
-          <h3>Backend Developer — Web Applications</h3>
+          <h3>Web Developer & Scrum Master</h3>
           <span class="entry-date">Aug 2022 — Jun 2024</span>
         </div>
         <p class="entry-sub">Babak Silis · Part-time · Yazd, Iran · Hybrid</p>
-        <p>Developed and maintained web-based solutions supporting the company's digital
-           transformation. Built responsive websites and e-commerce platforms to enable online
-           sales and improve customer engagement, while collaborating on scalable, user-friendly
-           web application design.</p>
+        <p>Developed and maintained business web applications using Python/Django and JavaScript. Facilitated sprint planning, stand-ups, and retrospectives as Scrum Master while contributing to code reviews, testing, debugging, and release improvements.
+</p>
         <div class="tags">
-          <span>Django</span><span>OOP</span><span>REST APIs</span><span>Web Development</span>
+          <span>Python</span><span>Django</span><span>JavaScript</span><span>REST APIs</span><span>Agile/Scrum</span>
         </div>
       </div>
 
@@ -112,9 +110,11 @@
           <span class="entry-date">Sep 2020 — Jun 2022</span>
         </div>
         <p class="entry-sub">Mesbah Technical &amp; Vocational School · Full-time · Yazd, Iran · On-site</p>
-        <p>Taught programming fundamentals and software concepts to 10th and 11th grade vocational
-           students. Developed structured learning materials and guided students in building
-           problem-solving and analytical thinking skills.</p>
+        <p>Taught programming, database design, computer networking, and systems installation to vocational students. Designed hands-on technical projects and mentored students in applying programming and software-engineering concepts.
+</p>
+ <div class="tags">
+          <span>Programming</span><span>Database Design</span><span>Computer Networking</span><span>Technical Education</span>
+        </div>
       </div>
     </section>
 
@@ -123,23 +123,24 @@
       <h2>Selected Projects</h2>
 
       
-
-      <div class="entry">
+<div class="entry">
         <div class="entry-head">
-          <h3>Family Life Dashboard</h3>
+          <h3>Real-time Inventory Lock</h3>
         </div>
-        <p>Gives every household its own private budget space with role-based visibility and a multilingual Telegram bot — built on Cloudflare Workers and D1 to explore edge-native, serverless architecture.</p>
+        <p>Prevents overselling when concurrent checkout requests compete for limited stock, with separate implementations of optimistic versioning and PostgreSQL SELECT FOR UPDATE locking. Integration tests prove that 50 buyers competing for 10 units produce exactly 10 orders and zero overselling.
+</p>
         <div class="tags">
-          <span>TypeScript</span><span>React</span><span>Cloudflare Workers</span><span>D1</span><span>Drizzle ORM</span><span>Telegram Bot API</span>
+          <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>Docker</span><span>pytest</span><span>GitHub Actions</span>
         </div>
-        <a class="book-link" href="https://github.com/mhzrb/Family-Life-Dashboard" target="_blank" rel="noopener">View on GitHub ↗</a>
+        <a class="book-link" href="https://github.com/mhzrb/realtime-inventory-lock" target="_blank" rel="noopener">View on GitHub ↗</a>
       </div>
-      
-      <div class="entry">
+
+<div class="entry">
         <div class="entry-head">
           <h3>Distributed Task Queue</h3>
         </div>
-        <p>A task queue built from scratch in Python — no Celery, no Redis, no RabbitMQ —with parallel worker processes, automatic retries with exponential backoff, a dead-letter queue, task chaining, and cron-like recurring schedules, plus a live dashboard.</p>
+        <p>A Celery-style task processing system built from scratch with parallel workers, priority queues, exponential-backoff retries, dead-letter handling, task chaining, recurring schedules, and live operational monitoring.
+</p>
         <div class="tags">
           <span>Python</span><span>SQLite</span><span>Flask</span><span>Multiprocessing</span>
         </div>
@@ -148,12 +149,24 @@
 
       <div class="entry">
         <div class="entry-head">
+          <h3>Family Life Dashboard</h3>
+        </div>
+        <p>A secure multi-household expense and budgeting platform with role-based access, owner-managed membership, configurable multi-currency budgets, historical spending analytics, and a multilingual Telegram bot.
+</p>
+        <div class="tags">
+          <span>TypeScript</span><span>React</span><span>Cloudflare Workers</span><span>D1</span><span>Drizzle ORM</span><span>Telegram Bot API</span>
+        </div>
+        <a class="book-link" href="https://github.com/mhzrb/Family-Life-Dashboard" target="_blank" rel="noopener">View on GitHub ↗</a>
+      </div>
+      
+      <div class="entry">
+        <div class="entry-head">
           <h3>Website Change Monitor</h3>
         </div>
-        <p>Watches any webpage and emails you the moment its content changes — built with
-           Django and Celery to demonstrate background jobs and scheduled task processing.</p>
+        <p>Monitors selected webpages through scheduled Django and Celery jobs, using SHA-256 change detection, optional CSS selectors, and email notifications.
+</p>
         <div class="tags">
-          <span>Django</span><span>Celery</span><span>Redis</span><span>Python</span>
+          <span>Python</span><span>Django</span><span>Celery</span><span>Redis</span><span>BeautifulSoup</span>
         </div>
         <a class="book-link" href="https://github.com/mhzrb/website-change-monitor" target="_blank" rel="noopener">View on GitHub ↗</a>
       </div>
